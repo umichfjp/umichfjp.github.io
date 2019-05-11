@@ -1,3 +1,10 @@
 html {
   background-color: #01265D;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
