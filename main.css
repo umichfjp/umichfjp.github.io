@@ -9,6 +9,27 @@ body {
   margin-top: 20px;
 }
 
+h1 {
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 65px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.title {
+  font-weight: 900;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 2% 10% 76% 10% 2%;
