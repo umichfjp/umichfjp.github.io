@@ -8,3 +8,31 @@ body {
   color: #FFFFFF;
   margin-top: 20px;
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 2% 10% 76% 10% 2%;
+  grid-template-rows: auto;
+  grid-row-gap: 10px;
+  grid-template-areas:
+  ". . photo . ."
+  ". text text text ."
+  ". gallery gallery gallery ."
+  ". footer footer footer .";
+}
+
+.photo {
+  grid-area: photo;
+}
+
+.text {
+  grid-area: text;
+}
+
+.gallery {
+  grid-area: gallery;
+}
+
+.footer {
+  grid-area: footer;
+}
