@@ -53,6 +53,22 @@ h3 {
   }
 }
 
+.emphasis {
+  font-size: 50px;
+  color: #FF0000;
+  font-weight: 900;
+  line-height: 35px;
+  padding-left: 6px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .emphasis {
+    font-size: 30px;
+    line-height: 21px;
+  }
+}
+
 .container {
   background: #FFCB05;
   color: #00274c;
