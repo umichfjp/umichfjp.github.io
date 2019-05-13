@@ -64,8 +64,8 @@ h3 {
 
 @media screen and (max-width: 600px) {
   .emphasis {
-    font-size: 30px;
-    line-height: 21px;
+    font-size: 20px;
+    line-height: 18px;
   }
 }
 
