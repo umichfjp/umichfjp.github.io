@@ -133,3 +133,38 @@ h3 {
 .text {
   grid-area: text;
 }
+
+.myform .entry {
+  background: #FFCB05;
+  color: #00274c;
+  border: 3px solid #00274c;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  height: 30px;
+  width: 20%;
+  font-size: 20px;
+  padding-left: 2px;
+}
+
+.myform .entry:hover {
+  background: #FFFFFF;
+  font-weight: 700;
+}
+
+.myform .submit {
+  background: #FFCB05;
+  color: #00274c;
+  border: 3px solid #00274c;
+  border-radius: 8px;
+  height: 30px;
+  width: 10%;
+  font-size: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.myform .submit:hover {
+  background: #FFFFFF;
+  font-weight: 700;
+}

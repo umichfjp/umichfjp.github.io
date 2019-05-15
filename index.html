@@ -12,6 +12,14 @@
     <title>Flint Justice Partnership Official Website</title>
     <style media="screen"></style>
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeKlaMUAAAAACjvfhYk02VhAUoXPevk1cwIyakd"></script>
+  <script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('6LeKlaMUAAAAACjvfhYk02VhAUoXPevk1cwIyakd', {action: 'homepage'}).then(function(token) {
+         ...
+      });
+  });
+  </script>
   </head>
 
 
@@ -59,9 +67,24 @@
         Get involved<font color="#FF0000">.</font>
       </div>
       <div class="container">
-        <h3><center><big>
-           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdKlKJWDxZ3CbxoiWinI_KLmMA3uAO0kQH80IiHYsQJF9APGw/viewform?usp=pp_url&entry.1045781291=@umich.edu" target="_blank">Click here to get involved.</a>
-        </big></center></h3>
+
+
+        <script type="text/javascript">var submitted=false;</script>
+        <br />
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://umichfjp.github.io/';}"></iframe>
+<form class="myform" action="https://docs.google.com/forms/d/e/1FAIpQLScu7gX4laX7AssbJkINEweh4vgGVqCmzKalcwSxqcHDCrAdAQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" onkeydown="return event.key != 'Enter';">
+
+              <center><label>Enter your @umich.edu email below</label>
+              <br /><input class="entry" type="email" name="entry.1957990408" value="@umich.edu" maxlength="18" minlength="13" name="email_address" type="text" required pattern="[a-z0-9._%+-]+@umich.edu" />
+              <br /><input class="submit" type="submit" value="Submit" />
+            </form><br /></center>
+
+
+
+
+
+
+
       </div>
     </div>
 
@@ -79,5 +102,7 @@
         </div>
       </div>
     </div>
+
+
   </body>
 </html>
