@@ -1,0 +1,30 @@
+url: "https://umichfjp.github.io"
+baseurl: ""
+
+title: Flint Justice Partnership Official Website
+
+description: The Flint Justice Partnership at the University of Michigan aims to serve and connect with the Flint community and educate UM students about the Flint water crisis.
+
+author:
+  name: Michal T. Ruprecht
+
+url-pretty: "umichfjp.github.io"
+
+gtag: "'config', 'UA-141203061-1'"
+
+google_analytics: "UA-141203061-1"
+
+exclude:
+  - CHANGELOG.md
+  - CNAME
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - Vagrantfile
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
