@@ -134,6 +134,14 @@ h3 {
   grid-area: text;
 }
 
+.text2 {
+  grid-area: text;
+}
+
+.text3 {
+  grid-area: text;
+}
+
 .myform .entry {
   background: #FFCB05;
   color: #00274c;
