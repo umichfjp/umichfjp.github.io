@@ -120,8 +120,13 @@ h3 {
   grid-template-rows: auto;
   grid-row-gap: 10px;
   grid-template-areas:
-  ". . photo . ."
+  "blue blue photo blue blue"
   ". text text text ."
+}
+
+.blue {
+  grid-area: blue;
+  background-color: #00274c;
 }
 
 .photo {
