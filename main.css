@@ -122,8 +122,6 @@ h3 {
   grid-template-areas:
   ". . photo . ."
   ". text text text ."
-  ". text2 text2 text2 ."
-  ". text3 text3 text3 ."
 }
 
 .photo {
@@ -131,14 +129,6 @@ h3 {
 }
 
 .text {
-  grid-area: text;
-}
-
-.text2 {
-  grid-area: text;
-}
-
-.text3 {
   grid-area: text;
 }
 
