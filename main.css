@@ -178,3 +178,9 @@ h3 {
   font-size: 9px;
   line-height: 9px;
 }
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
