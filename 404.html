@@ -1,0 +1,38 @@
+---
+layout: default
+title: Flint Justice Partnership Official Website
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>404 Error - Page Not Found</title>
+    <meta http-equiv="refresh" content="10; url=https://umichfjp.github.io" />
+  </head>
+
+  <body>
+    <center><h1>404 Error - Page Not Found​</h1></center>
+    <div class="text">
+      <h3>
+      Click the link below or you will automatically be redirected to ​www.umichfjp.github.io in 10 seconds.
+      <center><a href="https://umichfjp.github.io">Click here to be redirected to the homepage.</a></center></h3>
+    </div>
+  <footer>
+  </footer>
+  <script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+  </script>
+  </body>
+</html>
