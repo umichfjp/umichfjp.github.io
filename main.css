@@ -182,3 +182,46 @@ h3 {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+.button
+{
+  display: inline-block;
+  width: 40%;
+  border: 3px solid #01265D;
+  text-align: center !important;
+  vertical-align: middle !important;
+  font-weight: 400;
+  background-color: #01265D;
+  border-radius: 8px;
+  color: #FED41C !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 5px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-decoration: none;
+}
+
+.button a
+{
+  color: #FED41C;
+}
+
+.button a:hover
+{
+  color: #01265D !important;
+  font-weight: bold;
+}
+
+.button:hover
+{
+  text-align: center !important;
+  font-weight: 600;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: #01265D !important;
+}
