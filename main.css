@@ -79,20 +79,8 @@ h2 {
   }
 }
 
-.title_re {
-  font-size: 70px;
-  color: #00274c;
+.yellow {
   background-color: #FFCB05;
-  font-weight: 900;
-  line-height: 50px;
-  padding-left: 6px;
-}
-
-@media screen and (max-width: 600px) {
-  .title_re {
-    font-size: 40px;
-    line-height: 29px;
-  }
 }
 
 .emphasis {
