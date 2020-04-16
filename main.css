@@ -24,6 +24,12 @@ h1 {
   color: #00274c;
 }
 
+h1 a {
+  font-weight: 900;
+  color: #01265D;
+  text-decoration: none;
+}
+
 h2 {
   font-size: 30px;
   font-weight: 400;
