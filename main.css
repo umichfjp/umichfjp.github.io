@@ -125,10 +125,6 @@ h2 {
   }
 }
 
-li {
-  white-space: pre-wrap;
-}
-
 .emphasis {
   font-size: 50px;
   color: #FF0000;
