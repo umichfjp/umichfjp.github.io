@@ -101,6 +101,21 @@ h2 {
   }
 }
 
+.title-re {
+  font-size: 70px;
+  color: #00274c;
+  font-weight: 900;
+  line-height: 65px;
+  padding-left: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .title-re {
+    font-size: 40px;
+    line-height: 35px;
+  }
+}
+
 .emphasis {
   font-size: 50px;
   color: #FF0000;
