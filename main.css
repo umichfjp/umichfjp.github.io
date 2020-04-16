@@ -25,14 +25,14 @@ h1 {
 }
 
 h1 a {
-  font-weight: 900;
+  font-weight: 400;
   color: #007CE1;
   text-decoration: none;
 }
 
 .h1 a:hover {
   color: #01265D;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 h2 {
