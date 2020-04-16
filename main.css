@@ -125,7 +125,7 @@ h2 {
   }
 }
 
-ul:empty + .empty-state {
+.empty-state {
   display: block;
 }
 
