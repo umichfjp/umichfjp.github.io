@@ -154,5 +154,21 @@ title: Flint Justice Partnership Official Website
         <h4>The University of Michigan is not affiliated with the Flint Justice Partnership. This site was developed in partnership with multiple Flint-based organizations. They are not meant as an endorsement of the Flint Justice Partnership. By using this website, you agree that the Flint Justice Partnership will not be liable for any harm relating to your use.</h4>
         </div>
       </div>
+
+      <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+      </script>
   </body>
 </html>
