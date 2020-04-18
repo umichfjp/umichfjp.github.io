@@ -257,6 +257,35 @@ h2 {
   line-height: 9px;
 }
 
+.collapsible {
+  color: #FFFFFF;
+  background-color: #01265D;
+  cursor: pointer;
+  border: 1px solid #01265D;
+  border-radius: 8px;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+}
+
+.collapsible:hover {
+  color: #01265D;
+  font-weight: bold;
+  background-color: #FFFFFF;
+}
+
+.active {
+  background-color: #01265D;
+}
+
+.collapsible:after {
+  content: "Show more";
+}
+
+.active:after {
+  content: "Show less";
+}
+
 .content {
   max-height: 0;
   overflow: hidden;
