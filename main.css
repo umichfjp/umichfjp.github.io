@@ -24,6 +24,13 @@ h1 {
   color: #00274c;
 }
 
+h1 .small {
+  font-size: 1px;
+  line-height: 1px;
+  font-weight: 1;
+  color: #ffffff;
+}
+
 h1 a {
   font-weight: 400;
   color: #007CE1;
