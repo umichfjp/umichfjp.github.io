@@ -219,6 +219,7 @@ h2 {
   grid-template-areas:
   ". . photo . ."
   ". text text text ."
+  ". . photore . ."
 }
 
 .photo {
