@@ -219,7 +219,7 @@ h2 {
   grid-template-areas:
   ". . photo . ."
   ". text text text ."
-  ". . photore . ."
+  ". . resources . ."
 }
 
 .photo {
@@ -230,7 +230,7 @@ h2 {
   grid-area: text;
 }
 
-.photore {
+.resources {
   grid-area: photo;
 }
 
