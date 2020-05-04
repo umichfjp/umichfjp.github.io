@@ -58,7 +58,14 @@ title: Resources - FJP
         </h3>
 
         <h3>
-          <b><big><big><mark>We're working hard to update this website with new resources. The newest resource was added on <span id="demo"></span>.</mark></big></big></b>
+          <b><big><big><mark>We're working hard to update this website with new resources. The newest resource was added on
+            <script>
+                update = new Date(document.lastModified)
+                theMonth = update.getMonth() + 1
+                theDate = update.getDate()
+                theYear = update.getFullYear()
+                document.writeln("<I>Last updated:" + theMonth + "/" + theDate + "/" + theYear + "</I>")
+              </script>.</mark></big></big></b>
         </h3>
 
         <br /><div class="titlere">Sign up for updates</div>
