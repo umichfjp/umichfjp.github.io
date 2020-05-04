@@ -79,6 +79,10 @@ h4 {
   color: #00274c;
 }
 
+mark {
+  background-color: #FF0000;
+}
+
 .tab {
   margin-left: 40px;
 }
