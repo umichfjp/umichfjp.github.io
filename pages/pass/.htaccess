@@ -1,9 +1,5 @@
+#Protect Directory
+AuthName "Dialog prompt"
 AuthType Basic
-AuthName "press"
-AuthUserFile pages/pass/.htpasswd
-require valid-user
-
-AuthType Basic
-AuthName "login"
-AuthUserFile pages/pass/.htpasswd
-require valid-user
+AuthUserFile /pages/pass/.htpasswd
+Require valid-user
