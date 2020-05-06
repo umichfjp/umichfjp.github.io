@@ -17,7 +17,7 @@
             color: white;
             background-color: #333333;
         }
-        
+
         #dialogWrap {
             position: absolute;
             top: 0;
@@ -27,13 +27,13 @@
             display: table;
             background-color: #EEEEEE;
         }
-        
+
         #dialogWrapCell {
             display: table-cell;
             text-align: center;
             vertical-align: middle;
         }
-        
+
         #mainDialog {
             max-width: 400px;
             margin: 5px;
@@ -58,25 +58,25 @@
             height: 40px;
             font-size: 30px;
         }
-        
+
         #messageWrapper {
             float: left;
             vertical-align: middle;
             line-height: 30px;
         }
-        
+
         .notifyText {
             display: none;
         }
-        
+
         #invalidPass {
             color: red;
         }
-        
+
         #success {
             color: green;
         }
-        
+
         #submitPass {
             font-size: 20px;
             border-radius: 5px;
@@ -178,7 +178,7 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
         * http://github.com/jugglinmike/srcdoc-polyfill/
         * Copyright (c) 2013 Mike Pennisi; Licensed MIT */
         (function( window, document, undefined ) {
-	
+
 	        var idx, iframes;
 	        var _srcDoc = window.srcDoc;
 	        var isCompliant = !!("srcdoc" in document.createElement("iframe"));
@@ -249,29 +249,29 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
     </script>
     <script>
         var pl = {"salt":"+tctjEk4EGNHf4vp2oPBqbspLE0wAsqjw14YkCZkr6o=","iv":"9PlEI2nyUXY+gPFH5ZBNZQ==","data":"7SefzpSvGhjyAGZGX1Dl6JIq4hR8roaXxIK8l2LQ81K1eZ18VtyoZrFuZTgOZ1zyTgxD9TbG3agjU2D808tBuYwB4DkyWSu+91l56FLsQ37ZcqgYF6ST3upnJ26yW8WtCa1a0v2ijXekJANe8uyemV6F4bnNxiWvhQfGjBjP+r3OKMqPs8yj44eAwc7dB7uPRxIRad0W9aQIxkfQR9+7FIQWXz4iL530XI5Kf01UTqMPG1gSzFjvHnnMr1+Amdd0Lu6aDgG6wWko1HpTS+iDGZJamZDHcP3WDdrehdNgTWIQ9MLHTSdPSb8cNd+Y6fGRb23aIrmN8bAOvUZg8V/Ek1bLyKJ57IVbjTsFAuEXUHa2wn7VyDu9PDgJ7C4P/0W3VjZxHqofEOQkIibbKJJz+V0yexQSfOCrnq724qyKtemTcebqV2FP2+WnbEH2zbhYAl/mO5t71u6ke6zh2vxOg4PrDMxVn3laMbPuo9gBKrm9RVORM5BXst5LItzBHqKg"};
-        
+
         var submitPass = document.getElementById('submitPass');
         var passEl = document.getElementById('pass');
         var invalidPassEl = document.getElementById('invalidPass');
         var successEl = document.getElementById('success');
         var contentFrame = document.getElementById('contentFrame');
-        
+
         if (pl === "") {
             submitPass.disabled = true;
             passEl.disabled = true;
             alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
         }
-        
+
         function doSubmit(evt) {
             try {
                 var decrypted = decryptFile(CryptoJS.enc.Base64.parse(pl.data), passEl.value, CryptoJS.enc.Base64.parse(pl.salt), CryptoJS.enc.Base64.parse(pl.iv));
                 if (decrypted === "") throw "No data returned";
-                
+
                 // Set default iframe link targets to _top so all links break out of the iframe
                 decrypted = decrypted.replace("<head>", "<head><base href=\".\" target=\"_top\">");
-                
+
                 srcDoc.set(contentFrame, decrypted);
-                
+
                 successEl.style.display = "inline";
                 passEl.disabled = true;
                 submitPass.disabled = true;
@@ -283,7 +283,7 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
                 passEl.value = "";
             }
         }
-        
+
         submitPass.onclick = doSubmit;
         passEl.onkeypress = function(e){
             if (!e) e = window.event;
@@ -295,16 +295,18 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
               return false;
             }
         }
-        
+
         function decryptFile(contents, password, salt, iv) {
             var _cp = CryptoJS.lib.CipherParams.create({
                 ciphertext: contents
             });
             var key = CryptoJS.PBKDF2(password, salt, { keySize: 256/32, iterations: 100 });
             var decrypted = CryptoJS.AES.decrypt(_cp, key, {iv: iv});
-            
+
             return decrypted.toString(CryptoJS.enc.Utf8);
         }
     </script>
+
+
   </body>
 </html>
