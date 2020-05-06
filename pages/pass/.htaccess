@@ -1,5 +1,4 @@
-#Protect Directory
-AuthName "Dialog prompt"
+AuthUserFile pages/pass/.htpasswd
 AuthType Basic
-AuthUserFile /pages/pass/.htpasswd
+AuthName “Login”
 Require valid-user
