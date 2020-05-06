@@ -11,16 +11,9 @@ title: Press - FJP
   <body>
 <style>
 
-body {
-
-	background-image: url('grunge_patterns.jpg');
-	background-attachment: fixed;
-	color: #333;
-}
-
 .box {
 	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+	background: #FFCB05; margin: auto; padding: 12px;
 }
 
 .lightbox {
@@ -60,22 +53,16 @@ div.vertical {
 }
 
 :-ms-input-placeholder {
-   color: #955;
+   color: #000000;
    text-align: center;
 }
 </style>
 
 <body>
-	<div id="loginbox" class="lightbox" >
-		<div class="horizontal">
-			<div class="vertical">
-				<div class="box">
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
-				</div>
-			</div>
-		</div>
+	<div class="box">
+		<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
+		<button id="loginbutton" type="button">Login</button>
+		<p id="wrongPassword" style="display: none">wrong password</p>
 	</div>
 
 
