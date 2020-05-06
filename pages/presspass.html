@@ -1,23 +1,19 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Press - FJP
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Press - FJP</title>
     <meta name="robots" content="noindex, nofollow">
-    <title>Password Protected Page</title>
     <style>
-        html, body {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, Helvetica, sans-serif;
-        }
         #dialogText {
             padding: 10px 30px;
             color: white;
             background-color: #333333;
         }
-        
+
         #dialogWrap {
             position: absolute;
             top: 0;
@@ -27,13 +23,13 @@
             display: table;
             background-color: #EEEEEE;
         }
-        
+
         #dialogWrapCell {
             display: table-cell;
             text-align: center;
             vertical-align: middle;
         }
-        
+
         #mainDialog {
             max-width: 400px;
             margin: 5px;
@@ -58,25 +54,25 @@
             height: 40px;
             font-size: 30px;
         }
-        
+
         #messageWrapper {
             float: left;
             vertical-align: middle;
             line-height: 30px;
         }
-        
+
         .notifyText {
             display: none;
         }
-        
+
         #invalidPass {
             color: red;
         }
-        
+
         #success {
             color: green;
         }
-        
+
         #submitPass {
             font-size: 20px;
             border-radius: 5px;
@@ -178,7 +174,7 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
         * http://github.com/jugglinmike/srcdoc-polyfill/
         * Copyright (c) 2013 Mike Pennisi; Licensed MIT */
         (function( window, document, undefined ) {
-	
+
 	        var idx, iframes;
 	        var _srcDoc = window.srcDoc;
 	        var isCompliant = !!("srcdoc" in document.createElement("iframe"));
@@ -249,29 +245,29 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
     </script>
     <script>
         var pl = {"salt":"Iu4k4CULSDWhUpVNNfozY0MWoa8Pmvby5kp7Vbzcvqo=","iv":"T4mUKrZOFIrLt95kTx2iZQ==","data":"1srM1q19pPk3dnEv/NR+vkAeB0wrsdSXKpBg6Itcnum1DsjM54PkYi34y9nxmmIpAkSQrVX8GqvCq/JENOAM48coZjQdFvOpmRjVwD6b8TQ="};
-        
+
         var submitPass = document.getElementById('submitPass');
         var passEl = document.getElementById('pass');
         var invalidPassEl = document.getElementById('invalidPass');
         var successEl = document.getElementById('success');
         var contentFrame = document.getElementById('contentFrame');
-        
+
         if (pl === "") {
             submitPass.disabled = true;
             passEl.disabled = true;
             alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
         }
-        
+
         function doSubmit(evt) {
             try {
                 var decrypted = decryptFile(CryptoJS.enc.Base64.parse(pl.data), passEl.value, CryptoJS.enc.Base64.parse(pl.salt), CryptoJS.enc.Base64.parse(pl.iv));
                 if (decrypted === "") throw "No data returned";
-                
+
                 // Set default iframe link targets to _top so all links break out of the iframe
                 decrypted = decrypted.replace("<head>", "<head><base href=\".\" target=\"_top\">");
-                
+
                 srcDoc.set(contentFrame, decrypted);
-                
+
                 successEl.style.display = "inline";
                 passEl.disabled = true;
                 submitPass.disabled = true;
@@ -283,7 +279,7 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
                 passEl.value = "";
             }
         }
-        
+
         submitPass.onclick = doSubmit;
         passEl.onkeypress = function(e){
             if (!e) e = window.event;
@@ -295,16 +291,29 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
               return false;
             }
         }
-        
+
         function decryptFile(contents, password, salt, iv) {
             var _cp = CryptoJS.lib.CipherParams.create({
                 ciphertext: contents
             });
             var key = CryptoJS.PBKDF2(password, salt, { keySize: 256/32, iterations: 100 });
             var decrypted = CryptoJS.AES.decrypt(_cp, key, {iv: iv});
-            
+
             return decrypted.toString(CryptoJS.enc.Utf8);
         }
     </script>
+
+
+
+
+    <div class="grid">
+      <div class="text">
+        <h1>Press</h1>
+        <h3>
+          Click <a href="https://umichfjp.github.io/pages/presspass">here</a> to access resources for the press.
+          <br />Email <a href="mailto:UMich.FJP@umich.edu?subject=[PRESS] Password request">UMich.FJP@umich.edu</a> to get the login information.
+        </h3>
+        </div><br />
+      </div>
   </body>
 </html>
