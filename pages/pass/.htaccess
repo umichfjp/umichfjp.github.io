@@ -1,4 +1,4 @@
-AuthUserFile pages/pass/.htpasswd
 AuthType Basic
 AuthName “Login”
+AuthUserFile /pages/pass/.htpasswd
 Require valid-user
