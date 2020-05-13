@@ -120,7 +120,7 @@ h2 {
   padding-left: 6px;
 }
 
-.title mark {
+mark .title {
   background-color: #FFCB05;
 }
 
