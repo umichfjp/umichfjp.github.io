@@ -81,7 +81,7 @@ h4 {
 }
 
 mark {
-  color: #00274c;
+  color: #00274c !important;
   background-color: #FFCB05;
 }
 
