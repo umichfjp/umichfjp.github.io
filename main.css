@@ -120,10 +120,6 @@ h2 {
   padding-left: 6px;
 }
 
-mark .title {
-  background-color: #FFCB05;
-}
-
 @media screen and (max-width: 600px) {
   .title {
     font-size: 40px;
