@@ -130,7 +130,7 @@ h2 {
 
 .titlere {
   font-size: 70px;
-  color: #00274c;
+  color: #00274c !important;
   font-weight: 900;
   line-height: 65px;
   padding-left: 6px;
