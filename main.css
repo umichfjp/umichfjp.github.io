@@ -26,8 +26,8 @@ h1 {
 }
 
 h1 .smallh1 {
-  font-size: 1px;
-  line-height: 1px;
+  font-size: .01px;
+  line-height: .01px;
   font-weight: 1;
   color: #ffffff;
   margin: 0px;
