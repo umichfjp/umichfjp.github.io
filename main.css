@@ -469,7 +469,8 @@ h2 {
 .image {
     display: inline-block;
     vertical-align: top;
-    width: 25%;
+    height: 120px;
+    width: auto;
     padding-right: 15px;
 }
 
