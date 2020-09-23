@@ -134,7 +134,40 @@ title: Flint Justice Partnership Official Website
                   <br />Dr. David Schoem, Dr. Wendy A. Woods, Dr. Christine Modey, William Alt
             </h3></div>
 
+            <button class="collapsible"></button><div class="content">
+                <div class="bcontainer">
+                    <div class="a">
+                        <h3><b><big>Name<font color="#FF0000"></font></big></b>
+
+                        <br/>
+                        <img src="../assets/icons/block_m.png" alt="M" width="35" height="185" class="image">
+                        <p class="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. asdf asdf asdf asdf asdf asd fasd fasd fa sdf asdf asdf as df ads f </p>
+
+                        <br/>
+                        <img src="../assets/icons/block_m.png" alt="M" width="35" height="185" class="image">
+                        <p class="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. asdf asdf asdf asdf asdf asd fasd fasd fa sdf asdf asdf as df ads f </p>
+
+                        <br/>
+                        <img src="../assets/icons/block_m.png" alt="M" width="35" height="185" class="image">
+                        <p class="more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. asdf asdf asdf asdf asdf asd fasd fasd fa sdf asdf asdf as df ads f </p>
+                    </div>
+                </div>
           </div>
         </div>
+        <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
     </body>
 </html>
