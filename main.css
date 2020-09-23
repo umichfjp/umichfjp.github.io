@@ -484,15 +484,3 @@ h2 {
      padding-left: 25px;
      float: left;
 }
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
-
-.mores {
-    float: left;
-    padding-top: auto;
-    display: inline;
-}
