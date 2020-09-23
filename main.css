@@ -490,3 +490,9 @@ h2 {
   width: 33.33%;
   padding: 10px;
 }
+
+.mores {
+	display: inline-block;
+    padding-left: 25px;
+    float: left;
+}
