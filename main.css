@@ -492,7 +492,7 @@ h2 {
 }
 
 .mores {
-	display: inline-block;
-    padding-left: 25px;
     float: left;
+    padding-top: auto;
+    display: inline;
 }
