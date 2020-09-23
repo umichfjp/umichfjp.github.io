@@ -362,6 +362,7 @@ h2 {
 }
 
 .content {
+  display: inline-block;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -477,6 +478,9 @@ h2 {
 
 .more {
 	display: inline-block;
+    width: 40%;
+    @media (max-width: 620px) {
+      width: 100%;
      padding-left: 25px;
      float: right;
 }
