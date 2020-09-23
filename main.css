@@ -472,14 +472,11 @@ h2 {
     height: 120px;
     width: auto;
     padding-right: 35px;
-    float: left; 
+    float: left;
 }
 
 .more {
 	display: inline-block;
-    width: 40%;
-    @media (max-width: 620px) {
-      width: 100%;
      padding-left: 25px;
      float: right;
 }
