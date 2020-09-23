@@ -460,5 +460,22 @@ h2 {
   border-radius: 8px;
   margin-bottom: 15px;
   font-weight: normal;
-  position: relative;
+}
+
+.a {
+  text-align: left;
+}
+
+.image {
+display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    padding-right: 15px;
+}
+
+.more {
+	display: inline-block;
+    width: 40%;
+    @media (max-width: 620px) {
+      width: 100%;
 }
