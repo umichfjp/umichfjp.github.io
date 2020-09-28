@@ -11,8 +11,6 @@ title: Resources for Flint residents
         .navbar {
           overflow: hidden;
           background-color: #333;
-          position: absolute;
-          width: 100%;
         }
 
         .navbar a {
@@ -26,10 +24,9 @@ title: Resources for Flint residents
         }
 
         .navbar a:hover {
-          background: #ddd;
+          background-color: #ddd;
           color: black;
         }
-
 
         .sticky {
           position: fixed;
@@ -553,19 +550,21 @@ title: Resources for Flint residents
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+  </script>
 
+  <script>
       window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-  </script>
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+      }
+</script>
 
       <!-- Your customer chat code -->
       <div class="fb-customerchat"
