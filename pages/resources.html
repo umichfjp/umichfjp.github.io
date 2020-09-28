@@ -29,6 +29,14 @@ title: Resources for Flint residents
           background: #ddd;
           color: black;
         }
+
+
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
     </style>
   </head>
   <body>
@@ -116,13 +124,11 @@ title: Resources for Flint residents
             </center></form><br />
           </div>
 
-          <nav class="navbar navbar-default" id="mainnav">
-              <div class="navbar">
-                  <a href="#">Home</a>
-                  <a href="#">News</a>
-                  <a href="#">Contact</a>
-              </div>
-          </nav>
+          <div class="navbar">
+              <a href="#">Home</a>
+              <a href="#">News</a>
+              <a href="#">Contact</a>
+          </div>
 
           <h3>
             <b><big><big><mark><br />The <img src="https://umichfjp.github.io/assets/icons/covid.svg" alt="covid-19" style="width:64px;"> sticker shows resources available during the COVID-19 pandemic.</mark></big></big></b>
@@ -548,18 +554,17 @@ title: Resources for Flint residents
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
-      $(document).ready(function() {
-        var navpos = $('#mainnav').offset();
-        console.log(navpos.top);
-          $(window).bind('scroll', function() {
-            if ($(window).scrollTop() > navpos.top) {
-             $('#mainnav').addClass('navbar-fixed-top');
-             }
-             else {
-               $('#mainnav').removeClass('navbar-fixed-top');
-             }
-          });
-      });
+      window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
   </script>
 
       <!-- Your customer chat code -->
