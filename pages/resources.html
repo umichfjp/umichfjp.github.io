@@ -28,11 +28,39 @@ title: Resources for Flint residents
           color: black;
         }
 
+        .myNavBar .icon {
+            display: none;
+        }
+
         .sticky {
           position: fixed;
           top: 0;
           width: 100%;
         }
+
+        @media screen and (max-width: 600px) {
+          .myNavBar a:not(:first-child) {
+            display: none;
+          }
+          .myNavBar a.icon {
+            float: right;
+            display: block;
+          }
+        }
+
+        @media screen and (max-width: 600px) {
+          .myNavBar.responsive {position: relative;}
+          .myNavBar.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+
+          .myNavBar.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
 
     </style>
   </head>
@@ -125,6 +153,7 @@ title: Resources for Flint residents
               <a href="#">Home</a>
               <a href="#">News</a>
               <a href="#">Contact</a>
+              <a href="" class="icon" onclick="myFunc()">&#9776;</a>
           </div>
 
           <h3>
@@ -527,6 +556,15 @@ title: Resources for Flint residents
               } else {
                 navbar.classList.remove("sticky");
                 }
+            }
+
+            function myFunc() {
+              var x = document.getElementById("navbar");
+              if (x.className === "myNavBar") {
+                x.className += " responsive";
+              } else {
+                x.className = "myNavBar";
+              }
             }
 
 
