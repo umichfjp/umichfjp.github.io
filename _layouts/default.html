@@ -16,6 +16,10 @@
     <script src="https://umichfjp.github.io/script.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6LeKlaMUAAAAACjvfhYk02VhAUoXPevk1cwIyakd"></script>
     <script>
+       function resizeIframe(obj) {
+       obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';}
+    </script>
+    <script>
       grecaptcha.ready(function() {
         grecaptcha.execute('6LeKlaMUAAAAACjvfhYk02VhAUoXPevk1cwIyakd', {action: 'homepage'}).then(function(token) {
           ...
