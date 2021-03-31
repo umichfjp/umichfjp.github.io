@@ -636,17 +636,17 @@ h2 {
 }
 
 /* Place the container to the left */
-.left {
+.timelinecontainer left {
   left: 0;
 }
 
 /* Place the container to the right */
-.right {
+.timelinecontainer right {
   left: 50%;
 }
 
 /* Add arrows to the left container (pointing right) */
-.left::before {
+.timelinecontainer left::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -660,7 +660,7 @@ h2 {
 }
 
 /* Add arrows to the right container (pointing left) */
-.right::before {
+.timelinecontainer right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -674,7 +674,7 @@ h2 {
 }
 
 /* Fix the circle for containers on the right side */
-.right::after {
+.timelinecontainer right::after {
   left: -16px;
 }
 
