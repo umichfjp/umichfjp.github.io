@@ -1,4 +1,17 @@
-<div class="timeline">
+---
+layout: default
+title: Resources for Flint residents
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Resources for Flint residents</title>
+    <meta name="description" content="This website includes a list of resources for Flint residents. The website was created by the Flint Justice Partnership, a student-run organization at the University of Michigan. umich fjp resources">\
+    </head>
+  <body>
+    <div class="grid">
+      
+    <div class="timeline">
   <div class="container left">
     <div class="content">
       <h2>2017</h2>
@@ -13,3 +26,71 @@
   </div>
 </div>
 
+      <script>
+          window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+              } else {
+                navbar.classList.remove("sticky");
+                }
+            }
+
+            function myFunc() {
+              var x = document.getElementById("navbar");
+              if (x.className === "myNavBar") {
+                x.className += " responsive";
+              } else {
+                x.className = "myNavBar";
+              }
+            }
+
+
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+
+
+      document.getElementById("demo").innerHTML = document.lastModified;
+      </script>
+      <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v6.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+  </script>
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="489809758195801"
+  logged_in_greeting="Hi! How can we help you?"
+  logged_out_greeting="Hi! How can we help you?">
+      </div>
+  </body>
+</html>
