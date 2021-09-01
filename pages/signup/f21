@@ -1,0 +1,35 @@
+---
+layout: no_foot
+title: Flint Justice Partnership Official Website
+---
+<!DOCTYPE html>
+  <body>
+    <div class="grid">
+
+      <div class="text">
+        <div class="title">
+            FLINT JUSTICE PARTNERSHIP<font color="#FF0000">.</font>
+          </div>
+        <center>
+      <div class="container"><h2>
+            <script type="text/javascript">var submitted=false;</script>
+            <br /><iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='https://umichfjp.github.io/pages/signup/f21_reply';}"></iframe>
+            <form class="myform" action="https://docs.google.com/forms/d/e/1FAIpQLSfWZLbbqeIeteY8tgacdMvvWkM7qiTG7Y624oU7L4CnAAjugQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" onkeydown="return event.key != 'Enter';">
+              <center><label><b>Enter your umich.edu email below</b></label>
+                <br /><br /><input class="entry" type="email" name="entry.1110556182" placeholder="uniqname@umich.edu" value="@umich.edu" maxlength="18" minlength="13" name="email_address" type="text" required pattern="[a-z]+@umich.edu" />
+                <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                <br /><input class="submit" type="submit" value="Submit"/>
+                </form><br /></h2></div>
+              <div class="containerred">
+                <h3><b>Info meetings</b>
+                <li>Tuesday, September 7 at 8 pm in Mason Hall Room 3460</li>
+                <li>Monday, September 13 at 7 pm in West Quad Room G027</li>
+                  <br /><b>Questions?</b> Email <a href="mailto:UMich.FJP@umich.edu">UMich.FJP@umich.edu</a>
+                  <br /><b>Website</b>: <a href="https://umichfjp.github.io/pages/social" target="_blank">umichfjp.github.io/pages/social</a>
+                </h3>
+              </div>
+              </center>
+        </div>
+      </div>
+  </body>
+</html>
