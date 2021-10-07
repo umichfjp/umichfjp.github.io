@@ -33,7 +33,7 @@ img {
   width: 80%;
   margin: auto;
   height: 1px;
-  background: green;
+  background: #FF0000;
 }
 .timeline .year--end:before {
   content: "";
@@ -41,7 +41,7 @@ img {
   width: 80%;
   margin: auto;
   height: 1px;
-  background: green;
+  background: #FF0000;
 }
 .timeline .year--end:after {
   content: none;
@@ -58,7 +58,7 @@ img {
 .timeline .days .day .events {
   position: relative;
   float: left;
-  border-right: 1px solid green;
+  border-right: 1px solid #FF0000;
   padding: 30px;
   text-align: right;
   width: 50%;
@@ -68,7 +68,7 @@ img {
   width: 40%;
   display: inline-block;
   height: 1px;
-  background: green;
+  background: #FF0000;
   position: absolute;
   right: 0;
 }
@@ -105,7 +105,7 @@ img {
   width: calc(50% + 1px);
   float: right;
   border-right: 0;
-  border-left: 1px solid green;
+  border-left: 1px solid #FF0000;
   text-align: left;
 }
 .timeline .days .day:nth-child(odd) .events:after {
