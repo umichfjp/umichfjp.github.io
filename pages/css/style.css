@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
   font-family: Montserrat;
+  background: #FFCB05;
 }
 
 *, *:before, *:after {
